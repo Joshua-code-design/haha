@@ -1,0 +1,549 @@
+/* Premium Action Buttons */
+.action-btns .btn {
+    margin-right: 8px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .action-btns .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .action-btns .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Patient Modal - Premium Professional Design */
+  
+  /* Enhanced Modal Backdrop with refined blur effect */
+  .modal-backdrop {
+    background-color: rgba(10, 15, 30, 0.85);
+    backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Modal container styling - executive dimensions with premium shadow */
+  #viewPatientModal .modal-dialog {
+    max-width: 840px;
+    margin: 2.5rem auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 
+                0 8px 24px -4px rgba(0, 0, 0, 0.15),
+                0 0 1px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  /* Overall modal content styling with premium finish */
+  #viewPatientModal .modal-content {
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    overflow: hidden;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Fixed header with premium gradient */
+  #viewPatientModal .modal-header {
+    background: linear-gradient(135deg, #1a3c4e 0%, #2d5566 50%, #23687e 100%);
+    border-bottom: none;
+    padding: 1.25rem 1.75rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Modal title styling - refined look */
+  #viewPatientModal .modal-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enhanced icon with subtle glow effect */
+  #viewPatientModal .modal-title::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
+    mask-size: cover;
+    margin-right: 12px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Premium close button with refined interaction */
+  #viewPatientModal .btn-close {
+    background-color: transparent;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+    box-shadow: none;
+    padding: 0.6rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    margin: -0.6rem;
+  }
+  
+  #viewPatientModal .btn-close:hover {
+    transform: rotate(90deg) scale(1.15);
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+  }
+  
+  #viewPatientModal .btn-close:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Modal body content styling - premium scrollbar */
+  #viewPatientModal .modal-body {
+    padding: 1.75rem 2rem;
+    color: #1e293b;
+    overflow-y: auto;
+    flex: 1;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+  }
+  
+  #viewPatientModal .modal-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  #viewPatientModal .modal-body::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+  }
+  
+  #viewPatientModal .modal-body::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #viewPatientModal .modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+  }
+  
+  /* Patient details styling - enhanced readability with premium feel */
+  #patientDetails {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #334155;
+  }
+  
+  #patientDetails h6 {
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.075em;
+    position: relative;
+    padding-left: 12px;
+  }
+  
+  #patientDetails h6::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 16px;
+    background: linear-gradient(to bottom, #2d5566, #3c7b93);
+    border-radius: 2px;
+  }
+  
+  #patientDetails .info-group {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+  }
+  
+  #patientDetails .info-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Elegant hover effects for patient info groups */
+  #patientDetails .info-group {
+    padding: 0.75rem;
+    margin: -0.75rem -0.75rem 0.75rem -0.75rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #patientDetails .info-group:hover {
+    background-color: rgba(241, 245, 249, 0.7);
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05), 
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+    transform: translateY(-1px);
+  }
+  
+  #patientDetails .info-group:last-child {
+    margin-bottom: -0.75rem;
+  }
+  
+  /* Information layout enhancement */
+  #patientDetails .row {
+    margin-bottom: 0.5rem;
+  }
+  
+  #patientDetails .col-md-6 {
+    position: relative;
+  }
+  
+  #patientDetails .fw-bold {
+    color: #0f172a;
+    font-weight: 600 !important;
+  }
+  
+  /* Modal footer styling - premium appearance */
+  #viewPatientModal .modal-footer {
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 1.25rem 2rem;
+    justify-content: flex-end;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Premium Button styling */
+  #viewPatientModal .btn-secondary {
+    background-color: #f8fafc;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  #viewPatientModal .btn-secondary:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  #viewPatientModal .btn-secondary:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Premium primary button styling */
+  #viewPatientModal .btn-primary {
+    background: linear-gradient(135deg, #1a3c4e 0%, #2d5566 100%);
+    color: white;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 0.75rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(26, 60, 78, 0.3),
+                0 2px 4px -1px rgba(26, 60, 78, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #viewPatientModal .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    transition: all 0.25s ease;
+  }
+  
+  #viewPatientModal .btn-primary:hover {
+    background: linear-gradient(135deg, #1a3c4e 0%, #23687e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(26, 60, 78, 0.4),
+                0 4px 6px -2px rgba(26, 60, 78, 0.1);
+  }
+  
+  #viewPatientModal .btn-primary:hover::before {
+    opacity: 0.8;
+  }
+  
+  #viewPatientModal .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px -1px rgba(26, 60, 78, 0.3),
+                0 2px 4px -1px rgba(26, 60, 78, 0.1);
+  }
+  
+  /* Danger button for critical actions */
+  #viewPatientModal .btn-danger {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.3),
+                0 2px 4px -1px rgba(220, 38, 38, 0.1);
+  }
+  
+  #viewPatientModal .btn-danger:hover {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(220, 38, 38, 0.4),
+                0 4px 6px -2px rgba(220, 38, 38, 0.1);
+  }
+  
+  #viewPatientModal .btn-danger:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.3),
+                0 2px 4px -1px rgba(220, 38, 38, 0.1);
+  }
+  
+  /* Enhanced responsive adjustments */
+  @media (max-width: 768px) {
+    #viewPatientModal .modal-dialog {
+      margin: 1rem;
+      max-width: calc(100% - 2rem);
+      height: calc(100vh - 2rem);
+    }
+    
+    #viewPatientModal .modal-content {
+      height: 100%;
+      border-radius: 12px;
+    }
+    
+    #viewPatientModal .modal-header {
+      padding: 1rem 1.25rem;
+    }
+    
+    #viewPatientModal .modal-body {
+      padding: 1.25rem;
+    }
+    
+    #viewPatientModal .modal-footer {
+      padding: 1rem 1.25rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    #viewPatientModal .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Enhanced tablet view */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #viewPatientModal .modal-dialog {
+      max-width: 720px;
+    }
+  }
+  
+  /* Premium animation for modal appearance */
+  .modal.fade .modal-dialog {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scale(0.96) translateY(-20px);
+    opacity: 0;
+  }
+  
+  .modal.show .modal-dialog {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  
+  /* Additional premium touches */
+  
+  /* Content sections with subtle dividers */
+  #patientDetails .section {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  /* Status indicators */
+  .status-indicator {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1;
+    margin-left: 0.5rem;
+  }
+  
+  .status-active {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #059669;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+  }
+  
+  .status-inactive {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+  }
+  
+  .status-pending {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+  }
+  
+  /* Premium data labels */
+  .data-label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background-color: #f1f5f9;
+    border-radius: 6px;
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .data-label:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+  }
+  
+  /* Subtle focus effects for interactivity */
+  #viewPatientModal *:focus-visible {
+    outline: 2px solid rgba(45, 85, 102, 0.5);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  
+  /* Premium alerts for important information */
+  .patient-alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    border-left: 4px solid;
+  }
+  
+  .patient-alert.info {
+    background-color: rgba(56, 189, 248, 0.1);
+    border-left-color: #0ea5e9;
+  }
+  
+  .patient-alert.warning {
+    background-color: rgba(251, 191, 36, 0.1);
+    border-left-color: #f59e0b;
+  }
+  
+  .patient-alert.critical {
+    background-color: rgba(248, 113, 113, 0.1);
+    border-left-color: #ef4444;
+  }
+  
+  /* Spinner animation for loading states */
+  .loading-spinner {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid rgba(45, 85, 102, 0.3);
+    border-radius: 50%;
+    border-top-color: #2d5566;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Tooltip styling */
+  .premium-tooltip {
+    position: relative;
+  }
+  
+  .premium-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    animation: tooltip-appear 0.2s ease forwards;
+  }
+  
+  .premium-tooltip:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1e293b transparent transparent transparent;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    animation: tooltip-appear 0.2s ease forwards;
+  }
+  
+  @keyframes tooltip-appear {
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+  
+  /* Premium message box for important notices */
+  .premium-message {
+    background: linear-gradient(135deg, rgba(26, 60, 78, 0.05) 0%, rgba(45, 85, 102, 0.08) 100%);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    position: relative;
+    border: 1px solid rgba(45, 85, 102, 0.1);
+  }
+  
+  .premium-message::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background: inherit;
+    border-top: 1px solid rgba(45, 85, 102, 0.1);
+    border-left: 1px solid rgba(45, 85, 102, 0.1);
+    transform: rotate(45deg);
+  }

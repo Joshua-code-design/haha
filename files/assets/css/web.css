@@ -1,0 +1,314 @@
+/* Professional Patient Management System CSS
+ * Modern premium design with clean interface
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Container styling */
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Card styling with subtle shadow */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border: none;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #0f172a;
+  position: relative;
+}
+
+.card-header h4:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  height: 4px;
+  width: 40px;
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  border-radius: 2px;
+}
+
+.card-body {
+  padding: 1.5rem 2rem;
+}
+
+/* Table styling */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  padding: 1rem 1.5rem;
+  border: none;
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.table tbody td {
+  padding: 1rem 1.5rem;
+  vertical-align: middle;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+/* Action buttons styling */
+.action-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.btn-info {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #0284c7;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 100%);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+/* Icon styling */
+.bi {
+  font-size: 0.875rem;
+  margin-right: 4px;
+  position: relative;
+  top: 1px;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 1.25rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #f1f5f9;
+  padding: 1.25rem 1.5rem;
+}
+
+.btn-close {
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Spinner/loader styling */
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+  color: #3b82f6;
+}
+
+/* Form controls styling for modals */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.alert-danger {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .card-header, .card-body {
+    padding: 1.25rem;
+  }
+  
+  .table thead th, .table tbody td {
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .action-btns {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .btn-sm {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .table thead th, .table tbody td {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Light striping for alternate rows */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fafbfc;
+}
+
+/* Patient details section styling */
+#patientDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.patient-info-group {
+  margin-bottom: 1rem;
+}
+
+.patient-info-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.patient-info-value {
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* Empty state styling */
+.text-center {
+  text-align: center;
+}
